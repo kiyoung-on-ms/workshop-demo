@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="개요 및 아키텍처 Microsoft Fabric은 데이터 이동에서 데이터 과학, 실시간 분석 및 비즈니스 인텔리전스에 이르기까지 모든 것을 다루는 엔터프라이즈를 위한 올인원 분석 솔루션입니다. 데이터 레이크, 데이터 엔지니어링 및 데이터 통합을 포함한 포괄적인 서비스 제품군을 모두 한 곳에서 제공합니다. 자세한 내용은 Microsoft Fabric란?을 참조하세요.
+이 자습서에서는 데이터 취득에서 데이터 소비에 이르는 엔드 투 엔드 시나리오를 안내합니다. 다양한 환경과 통합 방법뿐만 아니라 이 플랫폼에서 작업할 때 제공되는 전문 및 시민 개발자 환경을 포함하여 Fabric에 대한 기본적인 이해를 구축하는 데 도움이 됩니다. 이 자습서는 참조 아키텍처, 기능 및 기능의 전체 목록 또는 특정 모범 사례의 권장 사항이 아닙니다.">
+    <meta name="author" content="Kiyoung Kim">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Lakehouse :: Microsoft Fabric">
+    <meta name="twitter:description" content="개요 및 아키텍처 Microsoft Fabric은 데이터 이동에서 데이터 과학, 실시간 분석 및 비즈니스 인텔리전스에 이르기까지 모든 것을 다루는 엔터프라이즈를 위한 올인원 분석 솔루션입니다. 데이터 레이크, 데이터 엔지니어링 및 데이터 통합을 포함한 포괄적인 서비스 제품군을 모두 한 곳에서 제공합니다. 자세한 내용은 Microsoft Fabric란?을 참조하세요.
+이 자습서에서는 데이터 취득에서 데이터 소비에 이르는 엔드 투 엔드 시나리오를 안내합니다. 다양한 환경과 통합 방법뿐만 아니라 이 플랫폼에서 작업할 때 제공되는 전문 및 시민 개발자 환경을 포함하여 Fabric에 대한 기본적인 이해를 구축하는 데 도움이 됩니다. 이 자습서는 참조 아키텍처, 기능 및 기능의 전체 목록 또는 특정 모범 사례의 권장 사항이 아닙니다.">
+    <meta property="og:url" content="http://localhost:1313/lakehouse/index.html">
+    <meta property="og:site_name" content="Microsoft Fabric">
+    <meta property="og:title" content="Lakehouse :: Microsoft Fabric">
+    <meta property="og:description" content="개요 및 아키텍처 Microsoft Fabric은 데이터 이동에서 데이터 과학, 실시간 분석 및 비즈니스 인텔리전스에 이르기까지 모든 것을 다루는 엔터프라이즈를 위한 올인원 분석 솔루션입니다. 데이터 레이크, 데이터 엔지니어링 및 데이터 통합을 포함한 포괄적인 서비스 제품군을 모두 한 곳에서 제공합니다. 자세한 내용은 Microsoft Fabric란?을 참조하세요.
+이 자습서에서는 데이터 취득에서 데이터 소비에 이르는 엔드 투 엔드 시나리오를 안내합니다. 다양한 환경과 통합 방법뿐만 아니라 이 플랫폼에서 작업할 때 제공되는 전문 및 시민 개발자 환경을 포함하여 Fabric에 대한 기본적인 이해를 구축하는 데 도움이 됩니다. 이 자습서는 참조 아키텍처, 기능 및 기능의 전체 목록 또는 특정 모범 사례의 권장 사항이 아닙니다.">
+    <meta property="og:locale" content="ko">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content="Lakehouse :: Microsoft Fabric">
+    <meta itemprop="description" content="개요 및 아키텍처 Microsoft Fabric은 데이터 이동에서 데이터 과학, 실시간 분석 및 비즈니스 인텔리전스에 이르기까지 모든 것을 다루는 엔터프라이즈를 위한 올인원 분석 솔루션입니다. 데이터 레이크, 데이터 엔지니어링 및 데이터 통합을 포함한 포괄적인 서비스 제품군을 모두 한 곳에서 제공합니다. 자세한 내용은 Microsoft Fabric란?을 참조하세요.
+이 자습서에서는 데이터 취득에서 데이터 소비에 이르는 엔드 투 엔드 시나리오를 안내합니다. 다양한 환경과 통합 방법뿐만 아니라 이 플랫폼에서 작업할 때 제공되는 전문 및 시민 개발자 환경을 포함하여 Fabric에 대한 기본적인 이해를 구축하는 데 도움이 됩니다. 이 자습서는 참조 아키텍처, 기능 및 기능의 전체 목록 또는 특정 모범 사례의 권장 사항이 아닙니다.">
+    <meta itemprop="datePublished" content="2024-10-27T22:32:15+09:00">
+    <meta itemprop="dateModified" content="2024-10-27T22:32:15+09:00">
+    <meta itemprop="wordCount" content="525">
+    <title>Lakehouse :: Microsoft Fabric</title>
+    <link href="http://localhost:1313/lakehouse/index.html" rel="canonical" type="text/html" title="Lakehouse :: Microsoft Fabric">
+    <link href="/lakehouse/index.xml" rel="alternate" type="application/rss+xml" title="Lakehouse :: Microsoft Fabric">
+    <link href="/images/logo.png" rel="icon" type="image/png">
+    <link href="/css/fontawesome-all.min.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css" rel="stylesheet">
+    <link href="/css/auto-complete.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css" rel="stylesheet">
+    <link href="/css/fonts.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css" rel="stylesheet"></noscript>
+    <link href="/css/theme.css" rel="stylesheet">
+    <link href="/css/theme-zen-light.css" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-light.css" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/print.css" rel="stylesheet" media="print">
+    <link href="/css/format-print.css" rel="stylesheet">
+    <script src="/js/variant.js"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..';
+      window.relearn.relBaseUri='..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      // variant stuff
+      window.variants && variants.init( [ 'zen-light', 'zen-dark' ] );
+      // translations
+      window.T_Copy_to_clipboard = `클립보드에 복사`;
+      window.T_Copied_to_clipboard = `클립보드에 복사됐습니다!`;
+      window.T_Copy_link_to_clipboard = `링크를 클립보드에 복사`;
+      window.T_Link_copied_to_clipboard = `클립보드에 링크가 복사됐습니다!`;
+      window.T_Reset_view = `보기 재설정`;
+      window.T_View_reset = `보기 초기화!`;
+      window.T_No_results_found = `"{0}"에 대한 결과가 없습니다.`;
+      window.T_N_results_found = `"{0}"에 대해 {1}개의 결과가 검색되었습니다.`;
+    </script>
+  </head>
+  <body class="mobile-support print" data-url="/lakehouse/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="메뉴 (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="목차 (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#개요-및-아키텍처">개요 및 아키텍처</a></li>
+        <li><a href="#시나리오">시나리오</a></li>
+        <li><a href="#아키텍처">아키텍처</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Microsoft Fabric</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Lakehouse</span><meta itemprop="position" content="2"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/lakehouse/index.print.html" title="전체 장 인쇄 (CTRL&#43;ALT&#43;p)"><i class="fa-fw fas fa-print"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/accounts/index.html" title="무료 평가판 등록 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/lakehouse/create_lakehouse/index.html" title="Lakehouse 만들기 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="외부 링크"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable lakehouse" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="lakehouse">Lakehouse</h1>
+
+<h3 id="개요-및-아키텍처">개요 및 아키텍처</h3>
+<p>Microsoft Fabric은 데이터 이동에서 데이터 과학, 실시간 분석 및 비즈니스 인텔리전스에 이르기까지 모든 것을 다루는 엔터프라이즈를 위한 올인원 분석 솔루션입니다. 데이터 레이크, 데이터 엔지니어링 및 데이터 통합을 포함한 포괄적인 서비스 제품군을 모두 한 곳에서 제공합니다. 자세한 내용은 Microsoft Fabric란?을 참조하세요.</p>
+<p>이 자습서에서는 데이터 취득에서 데이터 소비에 이르는 엔드 투 엔드 시나리오를 안내합니다. 다양한 환경과 통합 방법뿐만 아니라 이 플랫폼에서 작업할 때 제공되는 전문 및 시민 개발자 환경을 포함하여 Fabric에 대한 기본적인 이해를 구축하는 데 도움이 됩니다. 이 자습서는 참조 아키텍처, 기능 및 기능의 전체 목록 또는 특정 모범 사례의 권장 사항이 아닙니다.</p>
+<h3 id="시나리오">시나리오</h3>
+<p>일반적으로 조직은 트랜잭션 및 구조적 데이터 분석 요구 사항에 맞게 최신 데이터 Warehouse를 구축해 왔습니다. 빅 데이터(반정형/비정형) 데이터 분석에 대한 데이터 Lakehouse도 필요합니다. 이 두 시스템이 병렬로 운영되면서 사일로 현상, 데이터 중복, 그리고 총 소유 비용 증가를 유발했습니다.</p>
+<p>데이터 저장소의 통합과 Delta Lake 형식의 표준화를 사용하는 Fabric을 사용하면 사일로를 제거하고 데이터 중복을 제거하며 총 소유 비용을 크게 줄일 수 있습니다.</p>
+<p>Fabric에서 제공하는 유연성을 통해 Lakehouse 또는 데이터 Warehouse 아키텍처를 구현하거나 함께 결합하여 간단한 구현으로 둘 다 최대한 활용할 수 있습니다. 이 자습서에서는 리테일 조직의 예를 들어 처음부터 끝까지 Lakehouse를 빌드합니다. 브론즈 계층에 원시 데이터가 있고, 실버 계층에 유효성이 검사되고 중복 제거된 데이터가 있으며, 골드 계층에 고도로 세련된 데이터가 있는 medallion 아키텍처를 사용합니다. 모든 업계의 모든 조직에 대해 Lakehouse를 구현하는 동일한 접근 방식을 취할 수 있습니다.</p>
+<p>이 자습서에서는 리테일 도메인의 가상 Wide World Importers 회사의 개발자가 다음 단계를 완료하는 방법을 설명합니다.</p>
+<p>Power BI 계정에 로그인하고 무료 Microsoft Fabric 평가판에 등록합니다. Power BI 라이선스 가 없는 경우 Power BI 무료 라이선스에 등록한 다음 Fabric 평가판을 시작할 수 있습니다.</p>
+<p>조직에 대한 엔드 투 엔드 Lakehouse를 빌드하고 구현합니다.</p>
+<p>Fabric 작업 영역 만들기.
+Lakehouse를 만들기.
+데이터를 수집하고, 데이터를 변환하고, Lakehouse에 로드합니다. Lakehouse 모드 및 SQL 분석 엔드포인트 모드에서 하나의 데이터 복사본인 OneLake를 탐색할 수도 있습니다.
+SQL 분석 엔드포인트를 사용하여 Lakehouse에 연결하고 DirectLake를 사용하여 Power BI 보고서를 만들어 다양한 차원의 판매 데이터를 분석합니다.
+필요에 따라 파이프라인을 사용하여 데이터 수집 및 변환 흐름을 오케스트레이션하고 예약할 수 있습니다.
+작업 영역 및 기타 항목을 삭제하여 리소스를 정리합니다.</p>
+<h3 id="아키텍처">아키텍처</h3>
+<p>다음 이미지는 Lakehouse 엔드 투 엔드 아키텍처를 보여줍니다. 다음 표에는 두 가지 해당 구성 요소가 정리되어 있습니다.</p>
+<p><a href="#R-image-00000000000000000000000000000000" class="lightbox-link"><img alt="Fabric Architecture" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/images/lakehouse/lakehouse-end-to-end-architecture.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-00000000000000000000000000000000"><img alt="Fabric Architecture" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/images/lakehouse/lakehouse-end-to-end-architecture.png"></a></p>
+<ul>
+<li>
+<p><strong>데이터 원본</strong>: Fabric을 사용하면 간소화된 데이터 수집을 위해 Azure Data Services뿐만 아니라 다른 클라우드 기반 플랫폼 및 온-프레미스 데이터 원본에 빠르고 쉽게 연결할 수 있습니다.</p>
+</li>
+<li>
+<p><strong>수집</strong>: 200개 이상의 네이티브 커넥터를 사용하여 조직에 대한 인사이트를 빠르게 작성할 수 있습니다. 이러한 커넥터는 Fabric 파이프라인에 통합되며 데이터 흐름을 사용하여 사용자에게 친숙한 끌어서 놓기 데이터 변환을 활용합니다. 또한 Fabric의 바로 가기 기능을 사용하면 복사하거나 이동하지 않고도 기존 데이터에 연결할 수 있습니다.</p>
+</li>
+<li>
+<p><strong>변환 및 저장</strong>: Fabric은 Delta Lake 형식으로 표준화됩니다. 즉, 모든 Fabric 엔진은 데이터를 복제하지 않고 OneLake에 저장된 동일한 데이터 세트에 액세스하고 조작할 수 있습니다. 이 스토리지 시스템은 조직의 요구 사항에 따라 medallion 아키텍처 또는 데이터 메시를 사용하여 Lakehouse를 유연하게 빌드할 수 있습니다. 코드 우선 환경을 위해 파이프라인/데이터 흐름 또는 Notebook/Spark를 활용하여 데이터 변환을 위한 하위 코드 또는 코드 없음 환경 중에서 선택할 수 있습니다.</p>
+</li>
+<li>
+<p><strong>사용</strong>: Power BI는 보고 및 시각화를 위해 Lakehouse의 데이터를 사용할 수 있습니다. 각 Lakehouse에는 다른 보고 도구에서 Lakehouse 테이블의 데이터를 쉽게 연결하고 쿼리할 수 있도록 SQL 분석 엔드포인트라는 기본 제공 TDS 엔드포인트 가 있습니다. SQL 분석 엔드포인트는 사용자에게 SQL 연결 기능을 제공합니다.</p>
+</li>
+</ul>
+
+  <footer class="footline">
+  </footer>
+</article>
+          <section>
+            <h1 class="a11y-only">Lakehouse의 하위 섹션</h1>
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="lakehouse-만들기">Lakehouse 만들기</h1>
+
+<h3 id="필수-조건">필수 조건</h3>
+<ul>
+<li>무료 <a href="https://learn.microsoft.com/ko-kr/fabric/get-started/fabric-trial" rel="external" target="_blank">Microsoft Fabric 평가판</a>에 등록</li>
+<li>Fabric 평가판에는 Power BI 라이선스가 필요합니다. 라이선스가 없는 경우 <a href="https://app.fabric.microsoft.com/" rel="external" target="_blank">Power BI 무료 라이선스에 등록</a></li>
+</ul>
+<h3 id="작업-영역-만들기">작업 영역 만들기</h3>
+<p>이 단계에서는 Fabric 작업 영역을 만듭니다. 작업 영역에는 Lakehouse, 데이터 흐름, Data Factory 파이프라인, Notebook, Power BI 의미 체계 모델 및 보고서를 포함하는 이 Lakehouse 자습서에 필요한 모든 항목이 포함됩니다.</p>
+<ol>
+<li><a href="https://powerbi.com/" rel="external" target="_blank">Power BI</a>에 로그인합니다.</li>
+<li><strong>작업 영역</strong>, <strong>새로운 작업 영역</strong>를 차례로 선택합니다.</li>
+</ol>
+<p>데이터 저장소의 통합과 Delta Lake 형식의 표준화를 사용하는 Fabric을 사용하면 사일로를 제거하고 데이터 중복을 제거하며 총 소유 비용을 크게 줄일 수 있습니다.</p>
+<p>Fabric에서 제공하는 유연성을 통해 Lakehouse 또는 데이터 Warehouse 아키텍처를 구현하거나 함께 결합하여 간단한 구현으로 둘 다 최대한 활용할 수 있습니다. 이 자습서에서는 리테일 조직의 예를 들어 처음부터 끝까지 Lakehouse를 빌드합니다. 브론즈 계층에 원시 데이터가 있고, 실버 계층에 유효성이 검사되고 중복 제거된 데이터가 있으며, 골드 계층에 고도로 세련된 데이터가 있는 medallion 아키텍처를 사용합니다. 모든 업계의 모든 조직에 대해 Lakehouse를 구현하는 동일한 접근 방식을 취할 수 있습니다.</p>
+<p>이 자습서에서는 리테일 도메인의 가상 Wide World Importers 회사의 개발자가 다음 단계를 완료하는 방법을 설명합니다.</p>
+<p>Power BI 계정에 로그인하고 무료 Microsoft Fabric 평가판에 등록합니다. Power BI 라이선스 가 없는 경우 Power BI 무료 라이선스에 등록한 다음 Fabric 평가판을 시작할 수 있습니다.</p>
+<p>조직에 대한 엔드 투 엔드 Lakehouse를 빌드하고 구현합니다.</p>
+<p>Fabric 작업 영역 만들기.
+Lakehouse를 만들기.
+데이터를 수집하고, 데이터를 변환하고, Lakehouse에 로드합니다. Lakehouse 모드 및 SQL 분석 엔드포인트 모드에서 하나의 데이터 복사본인 OneLake를 탐색할 수도 있습니다.
+SQL 분석 엔드포인트를 사용하여 Lakehouse에 연결하고 DirectLake를 사용하여 Power BI 보고서를 만들어 다양한 차원의 판매 데이터를 분석합니다.
+필요에 따라 파이프라인을 사용하여 데이터 수집 및 변환 흐름을 오케스트레이션하고 예약할 수 있습니다.
+작업 영역 및 기타 항목을 삭제하여 리소스를 정리합니다.</p>
+<h3 id="아키텍처">아키텍처</h3>
+<p>다음 이미지는 Lakehouse 엔드 투 엔드 아키텍처를 보여줍니다. 다음 표에는 두 가지 해당 구성 요소가 정리되어 있습니다.</p>
+<p><a href="#R-image-00000000000000000000000000000000" class="lightbox-link"><img alt="Fabric Architecture" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/images/lakehouse/lakehouse-end-to-end-architecture.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-00000000000000000000000000000000"><img alt="Fabric Architecture" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/images/lakehouse/lakehouse-end-to-end-architecture.png"></a></p>
+<ul>
+<li>
+<p><strong>데이터 원본</strong>: Fabric을 사용하면 간소화된 데이터 수집을 위해 Azure Data Services뿐만 아니라 다른 클라우드 기반 플랫폼 및 온-프레미스 데이터 원본에 빠르고 쉽게 연결할 수 있습니다.</p>
+</li>
+<li>
+<p><strong>수집</strong>: 200개 이상의 네이티브 커넥터를 사용하여 조직에 대한 인사이트를 빠르게 작성할 수 있습니다. 이러한 커넥터는 Fabric 파이프라인에 통합되며 데이터 흐름을 사용하여 사용자에게 친숙한 끌어서 놓기 데이터 변환을 활용합니다. 또한 Fabric의 바로 가기 기능을 사용하면 복사하거나 이동하지 않고도 기존 데이터에 연결할 수 있습니다.</p>
+</li>
+<li>
+<p><strong>변환 및 저장</strong>: Fabric은 Delta Lake 형식으로 표준화됩니다. 즉, 모든 Fabric 엔진은 데이터를 복제하지 않고 OneLake에 저장된 동일한 데이터 세트에 액세스하고 조작할 수 있습니다. 이 스토리지 시스템은 조직의 요구 사항에 따라 medallion 아키텍처 또는 데이터 메시를 사용하여 Lakehouse를 유연하게 빌드할 수 있습니다. 코드 우선 환경을 위해 파이프라인/데이터 흐름 또는 Notebook/Spark를 활용하여 데이터 변환을 위한 하위 코드 또는 코드 없음 환경 중에서 선택할 수 있습니다.</p>
+</li>
+<li>
+<p><strong>사용</strong>: Power BI는 보고 및 시각화를 위해 Lakehouse의 데이터를 사용할 수 있습니다. 각 Lakehouse에는 다른 보고 도구에서 Lakehouse 테이블의 데이터를 쉽게 연결하고 쿼리할 수 있도록 SQL 분석 엔드포인트라는 기본 제공 TDS 엔드포인트 가 있습니다. SQL 분석 엔드포인트는 사용자에게 SQL 연결 기능을 제공합니다.</p>
+</li>
+</ul>
+
+  <footer class="footline">
+  </footer>
+</article>
+          </section>
+        </div>
+      </main>
+    </div>
+    <script src="/js/clipboard.min.js" defer></script>
+    <script src="/js/perfect-scrollbar.min.js" defer></script>
+    <script src="/js/theme.js" defer></script>
+  </body>
+</html>

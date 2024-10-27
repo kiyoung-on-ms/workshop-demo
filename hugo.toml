@@ -1,0 +1,44 @@
+baseURL = 'https://example.org/'
+languageCode = 'ko-kr'
+defaultContentLanguage = 'ko'
+title = 'Microsoft Fabric'
+theme = 'relearn'
+
+relativeURLs = false
+
+[params]
+  linkTitle = 'Microsoft Azure'
+  disableLandingPageButton = true
+  disableGeneratorVersion = true
+  disableAssetsBusting = true
+  disableRandomIds = true
+  
+  alwaysopen = false
+  collapsibleMenu = true
+
+  [[params.themeVariant]]
+    identifier = 'zen-light'
+    name = 'Light'
+
+  [[params.themeVariant]]
+    identifier = 'zen-dark'
+    name = 'Dark'
+  
+  [params.author]
+    email = 'kiyoungkim@microsoft.com'
+    name = 'Kiyoung Kim'
+
+[markup.goldmark.renderer]
+    unsafe = true
+    
+[outputs]
+  home = ['html', 'rss', 'print']
+  page = ['html', 'rss', 'print']
+  section = ['html', 'rss', 'print']
+
+[Languages]
+  [Languages.ko]
+    languageCode = 'ko'
+    languageName = '한국어'
+    title = 'Microsoft Fabric'
+    weight = 1
