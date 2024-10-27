@@ -1,5 +1,5 @@
 +++
-title = "Lakehouse 만들기"
+title = "Fabric 작업영역 만들기"
 date = 2024-10-27T22:32:15+09:00
 pageRef = '/'
 weight = 12

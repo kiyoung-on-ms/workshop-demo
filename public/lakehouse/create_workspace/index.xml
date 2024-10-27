@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fabric 작업영역 만들기 :: Microsoft Fabric</title>
+    <link>http://localhost:1313/workshop-demo/lakehouse/create_workspace/index.html</link>
+    <description>필수 조건 무료 Microsoft Fabric 평가판에 등록 Fabric 평가판에는 Power BI 라이선스가 필요합니다. 라이선스가 없는 경우 Power BI 무료 라이선스에 등록 작업 영역 만들기 이 단계에서는 Fabric 작업 영역을 만듭니다. 작업 영역에는 Lakehouse, 데이터 흐름, Data Factory 파이프라인, Notebook, Power BI 의미 체계 모델 및 보고서를 포함하는 이 Lakehouse 자습서에 필요한 모든 항목이 포함됩니다.&#xA;Power BI에 로그인합니다. 작업 영역, 새로운 작업 영역를 차례로 선택합니다. 데이터 저장소의 통합과 Delta Lake 형식의 표준화를 사용하는 Fabric을 사용하면 사일로를 제거하고 데이터 중복을 제거하며 총 소유 비용을 크게 줄일 수 있습니다.</description>
+    <generator>Hugo</generator>
+    <language>ko</language>
+    <managingEditor>kiyoungkim@microsoft.com (Kiyoung Kim)</managingEditor>
+    <webMaster>kiyoungkim@microsoft.com (Kiyoung Kim)</webMaster>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:1313/workshop-demo/lakehouse/create_workspace/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

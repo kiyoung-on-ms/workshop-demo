@@ -20,4 +20,4 @@ Microsoft Fabric 평가판 용량에 등록하면 Microsoft Fabric은 무료로 
 
 * [Microsoft Fabric](https://app.fabric.microsoft.com/) 페이지에 접속 후, 이메일을 입력 하고 아래쪽의 ```제출``` 버튼을 클릭하세요. **이메일은 회사 전자 메일 주소를 사용하여야 합니다.**
 ![Fabric page](/images/fabric_accounts/fabric_page.png)
-* 
+* 패브릭 평가판을 위해 bla bla...

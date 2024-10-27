@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko" dir="ltr" itemscope itemtype="http://schema.org/Article">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head><script src="/workshop-demo/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=workshop-demo/livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="description" content="개요 및 아키텍처 Microsoft Fabric은 데이터 이동에서 데이터 과학, 실시간 분석 및 비즈니스 인텔리전스에 이르기까지 모든 것을 다루는 엔터프라이즈를 위한 올인원 분석 솔루션입니다. 데이터 레이크, 데이터 엔지니어링 및 데이터 통합을 포함한 포괄적인 서비스 제품군을 모두 한 곳에서 제공합니다. 자세한 내용은 Microsoft Fabric란?을 참조하세요.
@@ -10,7 +10,7 @@
     <meta name="twitter:title" content="Lakehouse :: Microsoft Fabric">
     <meta name="twitter:description" content="개요 및 아키텍처 Microsoft Fabric은 데이터 이동에서 데이터 과학, 실시간 분석 및 비즈니스 인텔리전스에 이르기까지 모든 것을 다루는 엔터프라이즈를 위한 올인원 분석 솔루션입니다. 데이터 레이크, 데이터 엔지니어링 및 데이터 통합을 포함한 포괄적인 서비스 제품군을 모두 한 곳에서 제공합니다. 자세한 내용은 Microsoft Fabric란?을 참조하세요.
 이 자습서에서는 데이터 취득에서 데이터 소비에 이르는 엔드 투 엔드 시나리오를 안내합니다. 다양한 환경과 통합 방법뿐만 아니라 이 플랫폼에서 작업할 때 제공되는 전문 및 시민 개발자 환경을 포함하여 Fabric에 대한 기본적인 이해를 구축하는 데 도움이 됩니다. 이 자습서는 참조 아키텍처, 기능 및 기능의 전체 목록 또는 특정 모범 사례의 권장 사항이 아닙니다.">
-    <meta property="og:url" content="http://localhost:1313/lakehouse/index.html">
+    <meta property="og:url" content="http://localhost:1313/workshop-demo/lakehouse/index.html">
     <meta property="og:site_name" content="Microsoft Fabric">
     <meta property="og:title" content="Lakehouse :: Microsoft Fabric">
     <meta property="og:description" content="개요 및 아키텍처 Microsoft Fabric은 데이터 이동에서 데이터 과학, 실시간 분석 및 비즈니스 인텔리전스에 이르기까지 모든 것을 다루는 엔터프라이즈를 위한 올인원 분석 솔루션입니다. 데이터 레이크, 데이터 엔지니어링 및 데이터 통합을 포함한 포괄적인 서비스 제품군을 모두 한 곳에서 제공합니다. 자세한 내용은 Microsoft Fabric란?을 참조하세요.
@@ -24,25 +24,25 @@
     <meta itemprop="dateModified" content="2024-10-27T22:32:15+09:00">
     <meta itemprop="wordCount" content="525">
     <title>Lakehouse :: Microsoft Fabric</title>
-    <link href="http://localhost:1313/lakehouse/index.html" rel="canonical" type="text/html" title="Lakehouse :: Microsoft Fabric">
-    <link href="/lakehouse/index.xml" rel="alternate" type="application/rss+xml" title="Lakehouse :: Microsoft Fabric">
-    <link href="/images/logo.png" rel="icon" type="image/png">
-    <link href="/css/fontawesome-all.min.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css" rel="stylesheet">
-    <link href="/css/auto-complete.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css" rel="stylesheet">
-    <link href="/css/fonts.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css" rel="stylesheet"></noscript>
-    <link href="/css/theme.css" rel="stylesheet">
-    <link href="/css/theme-zen-light.css" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-light.css" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/print.css" rel="stylesheet" media="print">
-    <link href="/css/format-print.css" rel="stylesheet">
-    <script src="/js/variant.js"></script>
+    <link href="http://localhost:1313/workshop-demo/lakehouse/index.html" rel="canonical" type="text/html" title="Lakehouse :: Microsoft Fabric">
+    <link href="../lakehouse/index.xml" rel="alternate" type="application/rss+xml" title="Lakehouse :: Microsoft Fabric">
+    <link href="../images/logo.png" rel="icon" type="image/png">
+    <link href="../css/fontawesome-all.min.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/fontawesome-all.min.css" rel="stylesheet"></noscript>
+    <link href="../css/nucleus.css" rel="stylesheet">
+    <link href="../css/auto-complete.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/auto-complete.css" rel="stylesheet"></noscript>
+    <link href="../css/perfect-scrollbar.min.css" rel="stylesheet">
+    <link href="../css/fonts.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/fonts.css" rel="stylesheet"></noscript>
+    <link href="../css/theme.css" rel="stylesheet">
+    <link href="../css/theme-zen-light.css" rel="stylesheet" id="R-variant-style">
+    <link href="../css/chroma-relearn-light.css" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="../css/print.css" rel="stylesheet" media="print">
+    <link href="../css/format-print.css" rel="stylesheet">
+    <script src="../js/variant.js"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..';
       window.relearn.relBaseUri='..';
-      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.relearn.absBaseUri='http:\/\/localhost:1313\/workshop-demo';
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       // variant stuff
@@ -58,7 +58,7 @@
       window.T_N_results_found = `"{0}"에 대해 {1}개의 결과가 검색되었습니다.`;
     </script>
   </head>
-  <body class="mobile-support print" data-url="/lakehouse/index.html">
+  <body class="mobile-support print" data-url="../lakehouse/index.html">
     <div id="R-body" class="default-animation">
       <div id="R-body-overlay"></div>
       <nav id="R-topbar">
@@ -86,15 +86,15 @@
             </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
-            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Microsoft Fabric</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../index.html"><span itemprop="name">Microsoft Fabric</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
             itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Lakehouse</span><meta itemprop="position" content="2"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/lakehouse/index.print.html" title="전체 장 인쇄 (CTRL&#43;ALT&#43;p)"><i class="fa-fw fas fa-print"></i></a>
+            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show"><a class="topbar-control" href="../lakehouse/index.print.html" title="전체 장 인쇄 (CTRL&#43;ALT&#43;p)"><i class="fa-fw fas fa-print"></i></a>
             </div>
-            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/accounts/index.html" title="무료 평가판 등록 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="../accounts/index.html" title="무료 평가판 등록 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/lakehouse/create_lakehouse/index.html" title="Lakehouse 만들기 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="../lakehouse/create_workspace/index.html" title="Fabric 작업영역 만들기 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="외부 링크"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -134,8 +134,8 @@ SQL 분석 엔드포인트를 사용하여 Lakehouse에 연결하고 DirectLake�
 작업 영역 및 기타 항목을 삭제하여 리소스를 정리합니다.</p>
 <h3 id="아키텍처">아키텍처</h3>
 <p>다음 이미지는 Lakehouse 엔드 투 엔드 아키텍처를 보여줍니다. 다음 표에는 두 가지 해당 구성 요소가 정리되어 있습니다.</p>
-<p><a href="#R-image-00000000000000000000000000000000" class="lightbox-link"><img alt="Fabric Architecture" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/images/lakehouse/lakehouse-end-to-end-architecture.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-00000000000000000000000000000000"><img alt="Fabric Architecture" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/images/lakehouse/lakehouse-end-to-end-architecture.png"></a></p>
+<p><a href="#R-image-00000000000000000000000000000000" class="lightbox-link"><img alt="Fabric Architecture" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../images/lakehouse/lakehouse-end-to-end-architecture.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-00000000000000000000000000000000"><img alt="Fabric Architecture" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../images/lakehouse/lakehouse-end-to-end-architecture.png"></a></p>
 <ul>
 <li>
 <p><strong>데이터 원본</strong>: Fabric을 사용하면 간소화된 데이터 수집을 위해 Azure Data Services뿐만 아니라 다른 클라우드 기반 플랫폼 및 온-프레미스 데이터 원본에 빠르고 쉽게 연결할 수 있습니다.</p>
@@ -160,7 +160,7 @@ SQL 분석 엔드포인트를 사용하여 Lakehouse에 연결하고 DirectLake�
   <header class="headline">
   </header>
 
-<h1 id="lakehouse-만들기">Lakehouse 만들기</h1>
+<h1 id="fabric-작업영역-만들기">Fabric 작업영역 만들기</h1>
 
 <h3 id="필수-조건">필수 조건</h3>
 <ul>
@@ -186,8 +186,8 @@ SQL 분석 엔드포인트를 사용하여 Lakehouse에 연결하고 DirectLake�
 작업 영역 및 기타 항목을 삭제하여 리소스를 정리합니다.</p>
 <h3 id="아키텍처">아키텍처</h3>
 <p>다음 이미지는 Lakehouse 엔드 투 엔드 아키텍처를 보여줍니다. 다음 표에는 두 가지 해당 구성 요소가 정리되어 있습니다.</p>
-<p><a href="#R-image-00000000000000000000000000000000" class="lightbox-link"><img alt="Fabric Architecture" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/images/lakehouse/lakehouse-end-to-end-architecture.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-00000000000000000000000000000000"><img alt="Fabric Architecture" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/images/lakehouse/lakehouse-end-to-end-architecture.png"></a></p>
+<p><a href="#R-image-00000000000000000000000000000000" class="lightbox-link"><img alt="Fabric Architecture" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../images/lakehouse/lakehouse-end-to-end-architecture.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-00000000000000000000000000000000"><img alt="Fabric Architecture" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../images/lakehouse/lakehouse-end-to-end-architecture.png"></a></p>
 <ul>
 <li>
 <p><strong>데이터 원본</strong>: Fabric을 사용하면 간소화된 데이터 수집을 위해 Azure Data Services뿐만 아니라 다른 클라우드 기반 플랫폼 및 온-프레미스 데이터 원본에 빠르고 쉽게 연결할 수 있습니다.</p>
@@ -206,12 +206,92 @@ SQL 분석 엔드포인트를 사용하여 Lakehouse에 연결하고 DirectLake�
   <footer class="footline">
   </footer>
 </article>
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="lakehouse-빌드">Lakehouse 빌드</h1>
+
+<h3 id="필수-조건">필수 조건</h3>
+<ul>
+<li>Lakehouse를 만들기 전에 먼저 <a href="http://localhost:1313/workshop-demo/lakehouse/create_workspace/">Fabric 작업 공간을 생성</a>해야 합니다.</li>
+<li>CSV 파일을 수집하기 전에 OneDrive를 구성해야 합니다. OneDrive를 구성하지 않은 경우 Microsoft 365 무료 평가판에 등록합니다. <a href="https://www.microsoft.com/microsoft-365/try" rel="external" target="_blank">무료 평가판 - 한 달 동안 Microsoft 365</a>를 사용해 보세요.</li>
+</ul>
+<h2 id="lakehouse-만들기-샘플-데이터-수집-및-보고서-작성">Lakehouse 만들기, 샘플 데이터 수집 및 보고서 작성</h2>
+
+  <footer class="footline">
+  </footer>
+</article>
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="데이터-수집">데이터 수집</h1>
+
+<h3 id="필수-조건">필수 조건</h3>
+<ul>
+<li>필수 조건 1</li>
+<li>필수 조건 2</li>
+</ul>
+<h2 id="lakehouse로-데이터-수집">Lakehouse로 데이터 수집</h2>
+
+  <footer class="footline">
+  </footer>
+</article>
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="데이터-준비">데이터 준비</h1>
+
+<h3 id="필수-조건">필수 조건</h3>
+<ul>
+<li>필수 조건 1</li>
+<li>필수 조건 2</li>
+</ul>
+<h2 id="lakehouse에서-데이터-준비-및-변환">Lakehouse에서 데이터 준비 및 변환</h2>
+
+  <footer class="footline">
+  </footer>
+</article>
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="보고서-작성">보고서 작성</h1>
+
+<h3 id="필수-조건">필수 조건</h3>
+<ul>
+<li>필수 조건 1</li>
+<li>필수 조건 2</li>
+</ul>
+<h2 id="microsoft-fabric에서-보고서-작성">Microsoft Fabric에서 보고서 작성</h2>
+
+  <footer class="footline">
+  </footer>
+</article>
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="리소스-정리">리소스 정리</h1>
+
+<h3 id="필수-조건">필수 조건</h3>
+<ul>
+<li>필수 조건 1</li>
+<li>필수 조건 2</li>
+</ul>
+<h2 id="fabric-리소스-정리">Fabric 리소스 정리</h2>
+
+  <footer class="footline">
+  </footer>
+</article>
           </section>
         </div>
       </main>
     </div>
-    <script src="/js/clipboard.min.js" defer></script>
-    <script src="/js/perfect-scrollbar.min.js" defer></script>
-    <script src="/js/theme.js" defer></script>
+    <script src="../js/clipboard.min.js" defer></script>
+    <script src="../js/perfect-scrollbar.min.js" defer></script>
+    <script src="../js/theme.js" defer></script>
   </body>
 </html>

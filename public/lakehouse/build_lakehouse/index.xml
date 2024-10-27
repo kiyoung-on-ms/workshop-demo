@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lakehouse 빌드 :: Microsoft Fabric</title>
+    <link>http://localhost:1313/workshop-demo/lakehouse/build_lakehouse/index.html</link>
+    <description>필수 조건 Lakehouse를 만들기 전에 먼저 Fabric 작업 공간을 생성해야 합니다. CSV 파일을 수집하기 전에 OneDrive를 구성해야 합니다. OneDrive를 구성하지 않은 경우 Microsoft 365 무료 평가판에 등록합니다. 무료 평가판 - 한 달 동안 Microsoft 365를 사용해 보세요. Lakehouse 만들기, 샘플 데이터 수집 및 보고서 작성</description>
+    <generator>Hugo</generator>
+    <language>ko</language>
+    <managingEditor>kiyoungkim@microsoft.com (Kiyoung Kim)</managingEditor>
+    <webMaster>kiyoungkim@microsoft.com (Kiyoung Kim)</webMaster>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:1313/workshop-demo/lakehouse/build_lakehouse/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

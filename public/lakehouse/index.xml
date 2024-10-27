@@ -2,20 +2,55 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lakehouse :: Microsoft Fabric</title>
-    <link>http://localhost:1313/lakehouse/index.html</link>
+    <link>http://localhost:1313/workshop-demo/lakehouse/index.html</link>
     <description>개요 및 아키텍처 Microsoft Fabric은 데이터 이동에서 데이터 과학, 실시간 분석 및 비즈니스 인텔리전스에 이르기까지 모든 것을 다루는 엔터프라이즈를 위한 올인원 분석 솔루션입니다. 데이터 레이크, 데이터 엔지니어링 및 데이터 통합을 포함한 포괄적인 서비스 제품군을 모두 한 곳에서 제공합니다. 자세한 내용은 Microsoft Fabric란?을 참조하세요.&#xA;이 자습서에서는 데이터 취득에서 데이터 소비에 이르는 엔드 투 엔드 시나리오를 안내합니다. 다양한 환경과 통합 방법뿐만 아니라 이 플랫폼에서 작업할 때 제공되는 전문 및 시민 개발자 환경을 포함하여 Fabric에 대한 기본적인 이해를 구축하는 데 도움이 됩니다. 이 자습서는 참조 아키텍처, 기능 및 기능의 전체 목록 또는 특정 모범 사례의 권장 사항이 아닙니다.</description>
     <generator>Hugo</generator>
     <language>ko</language>
     <managingEditor>kiyoungkim@microsoft.com (Kiyoung Kim)</managingEditor>
     <webMaster>kiyoungkim@microsoft.com (Kiyoung Kim)</webMaster>
     <lastBuildDate>Sun, 27 Oct 2024 22:32:15 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/lakehouse/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/workshop-demo/lakehouse/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Lakehouse 만들기</title>
-      <link>http://localhost:1313/lakehouse/create_lakehouse/index.html</link>
+      <title>Fabric 작업영역 만들기</title>
+      <link>http://localhost:1313/workshop-demo/lakehouse/create_workspace/index.html</link>
       <pubDate>Sun, 27 Oct 2024 22:32:15 +0900</pubDate><author>kiyoungkim@microsoft.com (Kiyoung Kim)</author>
-      <guid>http://localhost:1313/lakehouse/create_lakehouse/index.html</guid>
+      <guid>http://localhost:1313/workshop-demo/lakehouse/create_workspace/index.html</guid>
       <description>필수 조건 무료 Microsoft Fabric 평가판에 등록 Fabric 평가판에는 Power BI 라이선스가 필요합니다. 라이선스가 없는 경우 Power BI 무료 라이선스에 등록 작업 영역 만들기 이 단계에서는 Fabric 작업 영역을 만듭니다. 작업 영역에는 Lakehouse, 데이터 흐름, Data Factory 파이프라인, Notebook, Power BI 의미 체계 모델 및 보고서를 포함하는 이 Lakehouse 자습서에 필요한 모든 항목이 포함됩니다.&#xA;Power BI에 로그인합니다. 작업 영역, 새로운 작업 영역를 차례로 선택합니다. 데이터 저장소의 통합과 Delta Lake 형식의 표준화를 사용하는 Fabric을 사용하면 사일로를 제거하고 데이터 중복을 제거하며 총 소유 비용을 크게 줄일 수 있습니다.</description>
+    </item>
+    <item>
+      <title>Lakehouse 빌드</title>
+      <link>http://localhost:1313/workshop-demo/lakehouse/build_lakehouse/index.html</link>
+      <pubDate>Sun, 27 Oct 2024 22:32:15 +0900</pubDate><author>kiyoungkim@microsoft.com (Kiyoung Kim)</author>
+      <guid>http://localhost:1313/workshop-demo/lakehouse/build_lakehouse/index.html</guid>
+      <description>필수 조건 Lakehouse를 만들기 전에 먼저 Fabric 작업 공간을 생성해야 합니다. CSV 파일을 수집하기 전에 OneDrive를 구성해야 합니다. OneDrive를 구성하지 않은 경우 Microsoft 365 무료 평가판에 등록합니다. 무료 평가판 - 한 달 동안 Microsoft 365를 사용해 보세요. Lakehouse 만들기, 샘플 데이터 수집 및 보고서 작성</description>
+    </item>
+    <item>
+      <title>데이터 수집</title>
+      <link>http://localhost:1313/workshop-demo/lakehouse/data_collection/index.html</link>
+      <pubDate>Sun, 27 Oct 2024 22:32:15 +0900</pubDate><author>kiyoungkim@microsoft.com (Kiyoung Kim)</author>
+      <guid>http://localhost:1313/workshop-demo/lakehouse/data_collection/index.html</guid>
+      <description>필수 조건 필수 조건 1 필수 조건 2 Lakehouse로 데이터 수집</description>
+    </item>
+    <item>
+      <title>데이터 준비</title>
+      <link>http://localhost:1313/workshop-demo/lakehouse/data_prep/index.html</link>
+      <pubDate>Sun, 27 Oct 2024 22:32:15 +0900</pubDate><author>kiyoungkim@microsoft.com (Kiyoung Kim)</author>
+      <guid>http://localhost:1313/workshop-demo/lakehouse/data_prep/index.html</guid>
+      <description>필수 조건 필수 조건 1 필수 조건 2 Lakehouse에서 데이터 준비 및 변환</description>
+    </item>
+    <item>
+      <title>보고서 작성</title>
+      <link>http://localhost:1313/workshop-demo/lakehouse/create_report/index.html</link>
+      <pubDate>Sun, 27 Oct 2024 22:32:15 +0900</pubDate><author>kiyoungkim@microsoft.com (Kiyoung Kim)</author>
+      <guid>http://localhost:1313/workshop-demo/lakehouse/create_report/index.html</guid>
+      <description>필수 조건 필수 조건 1 필수 조건 2 Microsoft Fabric에서 보고서 작성</description>
+    </item>
+    <item>
+      <title>리소스 정리</title>
+      <link>http://localhost:1313/workshop-demo/lakehouse/clean_resoruces/index.html</link>
+      <pubDate>Sun, 27 Oct 2024 22:32:15 +0900</pubDate><author>kiyoungkim@microsoft.com (Kiyoung Kim)</author>
+      <guid>http://localhost:1313/workshop-demo/lakehouse/clean_resoruces/index.html</guid>
+      <description>필수 조건 필수 조건 1 필수 조건 2 Fabric 리소스 정리</description>
     </item>
   </channel>
 </rss>

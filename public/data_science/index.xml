@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Science :: Microsoft Fabric</title>
+    <link>http://localhost:1313/workshop-demo/data_science/index.html</link>
+    <description>개요 데이터 과학 프로젝트의 수명 주기에는 일반적으로 다음 단계(종종 반복적으로)가 포함됩니다.&#xA;비즈니스 이해 데이터 취득 데이터 탐색, 정리, 준비 및 시각화 모델 학습 및 실험 추적 모델 채점 및 인사이트 생성 각 단계의 목표 및 성공 기준은 공동 작업, 데이터 공유 및 문서화에 따라 달라집니다. Fabric 데이터 과학 환경은 원활한 방식으로 협업, 데이터 획득, 공유 및 소비를 가능하게 하는 여러 기본 제공 기능으로 구성되어 있습니다.&#xA;이 자습서에서는 은행 고객 10,000명의 이탈 상태를 포함하는 데이터 세트를 탐색, 정리 및 변환하는 작업을 맡은 데이터 과학자의 역할을 수행해 봅니다. 그런 다음, 기계 학습 모델을 빌드하여 어떤 은행 고객이 이탈할 가능성이 있는지 예측합니다.</description>
+    <generator>Hugo</generator>
+    <language>ko</language>
+    <managingEditor>kiyoungkim@microsoft.com (Kiyoung Kim)</managingEditor>
+    <webMaster>kiyoungkim@microsoft.com (Kiyoung Kim)</webMaster>
+    <lastBuildDate>Sun, 27 Oct 2024 22:32:15 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/workshop-demo/data_science/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>시스템 준비</title>
+      <link>http://localhost:1313/workshop-demo/data_science/prep/index.html</link>
+      <pubDate>Sun, 27 Oct 2024 22:32:15 +0900</pubDate><author>kiyoungkim@microsoft.com (Kiyoung Kim)</author>
+      <guid>http://localhost:1313/workshop-demo/data_science/prep/index.html</guid>
+      <description>필수 조건 필수 조건 1 필수 조건 2 데이터 과학 워크샵을 위한 시스템 준비</description>
+    </item>
+    <item>
+      <title>데이터 준비</title>
+      <link>http://localhost:1313/workshop-demo/data_science/data_collection/index.html</link>
+      <pubDate>Sun, 27 Oct 2024 22:32:15 +0900</pubDate><author>kiyoungkim@microsoft.com (Kiyoung Kim)</author>
+      <guid>http://localhost:1313/workshop-demo/data_science/data_collection/index.html</guid>
+      <description>필수 조건 필수 조건 1 필수 조건 2 Apache Spark를 사용하여 Microsoft Fabric 레이크하우스에 데이터 수집</description>
+    </item>
+  </channel>
+</rss>

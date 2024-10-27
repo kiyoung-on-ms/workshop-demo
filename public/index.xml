@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Microsoft Fabric</title>
-    <link>http://localhost:1313/index.html</link>
+    <link>http://localhost:1313/workshop-demo/index.html</link>
     <description>Microsoft Fabric 워크샵에 오신 것을 환영합니다.&#xA;Microsoft Fabric은 통합 솔루션이 필요한 엔터프라이즈용으로 설계된 엔드투엔드 분석 및 데이터 플랫폼입니다. 데이터 이동, 처리, 수집, 변환, 실시간 이벤트 라우팅 및 보고서 작성을 포함합니다. 데이터 엔지니어링, Data Factory, 데이터 과학, 실시간 분석, Data Warehouse 및 데이터베이스를 포함한 포괄적인 서비스 제품군을 제공합니다.&#xA;Fabric을 사용하면 여러 벤더의 다양한 서비스를 어셈블할 필요가 없습니다. 대신 분석 요구 사항을 간소화하는 원활하게 통합되고 사용자 친화적인 플랫폼을 제공합니다. SaaS(Software as a Service) 모델에서 작동하는 Fabric은 단순성과 통합을 솔루션에 제공합니다.</description>
     <generator>Hugo</generator>
     <language>ko</language>
     <managingEditor>kiyoungkim@microsoft.com (Kiyoung Kim)</managingEditor>
     <webMaster>kiyoungkim@microsoft.com (Kiyoung Kim)</webMaster>
     <lastBuildDate>Sun, 27 Oct 2024 22:32:15 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/workshop-demo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>무료 평가판 등록</title>
-      <link>http://localhost:1313/accounts/index.html</link>
+      <link>http://localhost:1313/workshop-demo/accounts/index.html</link>
       <pubDate>Sun, 27 Oct 2024 22:32:15 +0900</pubDate><author>kiyoungkim@microsoft.com (Kiyoung Kim)</author>
-      <guid>http://localhost:1313/accounts/index.html</guid>
+      <guid>http://localhost:1313/workshop-demo/accounts/index.html</guid>
       <description>주의 Microsoft Fabric 계정이 있는 사용자는 이 단계를 건너 띄어주세요.&#xA;Microsoft Fabric 평가판 시작 Microsoft Fabric 평가판 용량에 등록하면 Microsoft Fabric은 무료로 제공됩니다. Microsoft Fabric 평가판 용량에는 패브릭 제품 워크로드 및 패브릭 항목을 만들고 호스트하는 리소스에 대한 액세스가 포함됩니다. 패브릭 평가판 기간은 60일입니다.&#xA;도움말 평가판에 대한 더 자세한 내용을 알기 원하시면 패브릭 평가판 시작 페이지를 방문해 보세요.&#xA;Microsoft Fabric 페이지에 접속 후, 이메일을 입력 하고 아래쪽의 제출 버튼을 클릭하세요. 이메일은 회사 전자 메일 주소를 사용하여야 합니다.</description>
     </item>
     <item>
       <title>Lakehouse</title>
-      <link>http://localhost:1313/lakehouse/index.html</link>
+      <link>http://localhost:1313/workshop-demo/lakehouse/index.html</link>
       <pubDate>Sun, 27 Oct 2024 22:32:15 +0900</pubDate><author>kiyoungkim@microsoft.com (Kiyoung Kim)</author>
-      <guid>http://localhost:1313/lakehouse/index.html</guid>
+      <guid>http://localhost:1313/workshop-demo/lakehouse/index.html</guid>
       <description>개요 및 아키텍처 Microsoft Fabric은 데이터 이동에서 데이터 과학, 실시간 분석 및 비즈니스 인텔리전스에 이르기까지 모든 것을 다루는 엔터프라이즈를 위한 올인원 분석 솔루션입니다. 데이터 레이크, 데이터 엔지니어링 및 데이터 통합을 포함한 포괄적인 서비스 제품군을 모두 한 곳에서 제공합니다. 자세한 내용은 Microsoft Fabric란?을 참조하세요.&#xA;이 자습서에서는 데이터 취득에서 데이터 소비에 이르는 엔드 투 엔드 시나리오를 안내합니다. 다양한 환경과 통합 방법뿐만 아니라 이 플랫폼에서 작업할 때 제공되는 전문 및 시민 개발자 환경을 포함하여 Fabric에 대한 기본적인 이해를 구축하는 데 도움이 됩니다. 이 자습서는 참조 아키텍처, 기능 및 기능의 전체 목록 또는 특정 모범 사례의 권장 사항이 아닙니다.</description>
     </item>
   </channel>
