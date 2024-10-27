@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://kiyoung-on-ms.github.io/workshop-demo/'
 languageCode = 'ko-kr'
 defaultContentLanguage = 'ko'
 title = 'Microsoft Fabric'
