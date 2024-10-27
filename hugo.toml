@@ -4,7 +4,8 @@ defaultContentLanguage = 'ko'
 title = 'Microsoft Fabric'
 theme = 'relearn'
 
-relativeURLs = false
+canonifyURLs = true
+relativeURLs = true
 
 [params]
   linkTitle = 'Microsoft Azure'
