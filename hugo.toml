@@ -17,6 +17,8 @@ relativeURLs = true
   alwaysopen = false
   collapsibleMenu = true
 
+  custom_css = ["css/menu.css", "css/bar.css"]
+
   [[params.themeVariant]]
     identifier = 'zen-light'
     name = 'Light'
@@ -31,7 +33,7 @@ relativeURLs = true
 
 [markup.goldmark.renderer]
     unsafe = true
-    
+
 [outputs]
   home = ['html', 'rss', 'print']
   page = ['html', 'rss', 'print']
